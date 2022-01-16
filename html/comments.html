@@ -28,8 +28,8 @@
 			<div style="min-height: 16%; max-height: 16%">
 				<p id="message" style="padding: 0% 10%; margin-top: 1.5%"></p>
 			</div>
-			<img src="../assets/btn-cancel.png" height=10%; class="postButton gdButton center" style="margin-right: 1%" onclick="$('#postComment').hide(); $('textarea').val('')">
-			<img src="../assets/btn-submit.png" type="submit" height=10%; class="postButton gdButton center" style="margin-left: 1%" id="submitComment">
+			<img src="../assets/btn-cancel.png" height=10%; class="postButton gdButton center" style="margin-right: 1%" onclick="$('#postComment').hide(); $('textarea').val('')" title="Cancel">
+			<img src="../assets/btn-submit.png" type="submit" height=10%; class="postButton gdButton center" style="margin-left: 1%" id="submitComment" title="Submit">
 		</div>
 	</div>
 
@@ -47,8 +47,8 @@
 			<div style="min-height: 18%; max-height: 18%">
 				<p id="likeMessage" style="padding: 0% 10%; margin-top: 2.5%"></p>
 			</div>
-			<img src="../assets/btn-cancel.png" height=10%; class="postButton gdButton center" style="margin-right: 1%" onclick="$('#likeComment').hide(); $('#likebtn').trigger('click');">
-			<img src="../assets/btn-submit.png" type="submit" height=10%; class="postButton gdButton center" style="margin-left: 1%" id="submitVote">
+			<img src="../assets/btn-cancel.png" height=10%; class="postButton gdButton center" style="margin-right: 1%" onclick="$('#likeComment').hide(); $('#likebtn').trigger('click');" title="Cancel">
+			<img src="../assets/btn-submit.png" type="submit" height=10%; class="postButton gdButton center" style="margin-left: 1%" id="submitVote" title="Submit">
 		</div>
 	</div>
 	
@@ -69,39 +69,39 @@
 		<div class="lightBox center dragscroll" id="commentBox" style="margin: 4.5% auto; width: 115vh; height: 86%; background-color: #934E27"></div>
 
 		<div class="supercenter" style="left: 97%; top: 15.5%; height: 8.5%">
-			<img class="gdButton" id="lastPage" src="../assets/double-arrow.png" height="90%">
+			<img class="gdButton" id="lastPage" src="../assets/double-arrow.png" height="90%" title="Last">
 		</div>
 
 		<div class="supercenter" id="firstPage" style="left: 97%; top: 27.5%; height: 8.5%; display: none;">
-			<img class="gdButton refreshBtn" src="../assets/double-arrow.png" style="transform: scaleX(-1);" height="90%">
+			<img class="gdButton refreshBtn" src="../assets/double-arrow.png" style="transform: scaleX(-1);" height="90%" title="Refresh">
 		</div>
 
 		<div class="supercenter" id="refreshButton" style="left: 97%; top: 27.5%; height: 10%">
-			<img class="gdButton refreshBtn" src="../assets/refresh.png" height="90%">
+			<img class="gdButton refreshBtn" src="../assets/refresh.png" height="90%" title="Refresh">
 		</div>
 
 		<div class="supercenter" style="left: 3%; top: 15%; height: 10%">
-			<img class="gdButton" id="topSort" src="../assets/sort-likes.png" height="90%">
+			<img class="gdButton" id="topSort" src="../assets/sort-likes.png" height="90%" title="Sort By Top">
 		</div>
 
 		<div class="supercenter" style="left: 3%; top: 25.5%; height: 10%">
-			<img class="gdButton" id="timeSort"  src="../assets/sort-time.png" height="90%">
+			<img class="gdButton" id="timeSort"  src="../assets/sort-time.png" height="90%" title="Sort By Time">
 		</div>
 	
 		<div class="supercenter" style="left: 3%; top: 36%; height: 10%">
-			<img class="gdButton" id="compactMode" src="../assets/compact-off.png" height="90%">
+			<img class="gdButton" id="compactMode" src="../assets/compact-off.png" height="90%" title="Toggle Compact Mode">
 		</div>
 
 		<div class="supercenter" style="left: 3%; top: 63%; height: 11%">
-			<img class="gdButton" id="autoMode" src="../assets/playbutton.png" height="90%">
+			<img class="gdButton" id="autoMode" src="../assets/playbutton.png" height="90%" title="Toggle Auto Mode">
 		</div>
 
 		<div class="supercenter" id="pageDown" style="left: 3%; top: 50%; height: 10%; display: none;">
-			<img class="gdButton" src="../assets/arrow-left.png" height="95%">
+			<img class="gdButton" src="../assets/arrow-left.png" height="95%" title="Previous">
 		</div>
 	
 		<div class="supercenter" id="pageUp" style="left: 97%; top: 50%; height: 10%;">
-			<img class="gdButton" src="../assets/arrow-right.png" height="95%">
+			<img class="gdButton" src="../assets/arrow-right.png" height="95%" title="Next">
 		</div>
 
 		<div class="supercenter" style="top: 4.8%; height: 10%; width: 100%;">
@@ -122,7 +122,7 @@
 	</div>
 
 	<div style="position:absolute; top: 2%; left: 1.5%; width: 10%; height: 25%; pointer-events: none">
-		<img class="gdButton yesClick" id="backButton" src="../assets/back.png" height="30%" onclick="backButton()">
+		<img class="gdButton yesClick" id="backButton" src="../assets/back.png" height="30%" onclick="backButton()" title="Back">
 	</div>
 
 </div>
