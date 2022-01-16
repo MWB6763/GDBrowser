@@ -25,7 +25,7 @@
 	</div>
 
 	<div style="position:absolute; top: 2%; left: -1.95%; width: 10%; height: 25%; pointer-events: none">
-		<img class="gdButton yesClick" id="backButton" src="../assets/back.png" height="30%" onclick="backButton()">
+		<img class="gdButton yesClick" id="backButton" src="../assets/back.png" height="30%" onclick="backButton()" title="Back">
 	</div> 
 	<br>
 </div>
@@ -41,9 +41,9 @@ fetch('../api/mappacks').then(res => res.json()).then(packs => {
 			<div class="mappack">
 			<a href="../search/${x.levels.join(",")}?list&header=${encodeURIComponent(x.name)}">
 			<img src="../assets/difficulties/${x.difficulty}.png" width="42%"><br>
-			<h3 class="gauntletText"">${x.name.replace("Pack", "<br>Pack")}<br>
-			<span style="color: rgb(${x.textColor})">${x.stars}</span><img class="valign" src="../assets/star.png" style="cursor: help; width: 14%; margin-left: 2%; transform: translateY(-10%);" title="Stars">
-			<span style="color: rgb(${x.barColor})">${x.coins}</span><img class="valign" src="../assets/coin.png" style="cursor: help; width: 14%; margin-left: 2%; transform: translateY(-10%);" title="Secret Coins">
+			<h3 class="gauntletText" title="{x.name}">${x.name.replace("Pack", "<br>Pack")}<br>
+			<span style="color: rgb(${x.textColor})">${x.stars}</span><img class="valign" src="../assets/star.png" style="cursor: help; width: 14%; margin-left: 2%; transform: translateY(-10%);" title="${x.stars} Stars">
+			<span style="color: rgb(${x.barColor})">${x.coins}</span><img class="valign" src="../assets/coin.png" style="cursor: help; width: 14%; margin-left: 2%; transform: translateY(-10%);" title="${x.coins} Secret Coins">
 			</h3></div></a>`)
 	})
 });
