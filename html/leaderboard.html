@@ -15,25 +15,25 @@
 <div id="everything" style="overflow: auto;">
 
 	<div id="scoreTabs">
-		<img src="../assets/tab-top-on.png" class="leaderboardTab" id="topTabOn" style="display: none">
-		<img src="../assets/tab-top-off.png" class="leaderboardTab leaderboardClick" id="topTabOff">
+		<img src="../assets/tab-top-on.png" class="leaderboardTab" id="topTabOn" style="display: none" title="Top">
+		<img src="../assets/tab-top-off.png" class="leaderboardTab leaderboardClick" id="topTabOff" title="Top">
 
 		<!-- for some GDPS'es -->
-		<img src="../assets/tab-weekly-on.png" class="sideSpaceC leaderboardTab" id="weeklyTabOn" style="display: none">
-		<img src="../assets/tab-weekly-off.png" class="sideSpaceC leaderboardTab leaderboardClick" id="weeklyTabOff" style="display: none">
+		<img src="../assets/tab-weekly-on.png" class="sideSpaceC leaderboardTab" id="weeklyTabOn" style="display: none" title="Weekly">
+		<img src="../assets/tab-weekly-off.png" class="sideSpaceC leaderboardTab leaderboardClick" id="weeklyTabOff" style="display: none" title="Weekly">
 
-		<img src="../assets/tab-accurate-on.png" class="sideSpaceC leaderboardTab" id="accurateTabOn" style="display: none">
-		<img src="../assets/tab-accurate-off.png" class="sideSpaceC leaderboardTab leaderboardClick" id="accurateTabOff">
+		<img src="../assets/tab-accurate-on.png" class="sideSpaceC leaderboardTab" id="accurateTabOn" style="display: none" title="Accurate">
+		<img src="../assets/tab-accurate-off.png" class="sideSpaceC leaderboardTab leaderboardClick" id="accurateTabOff" title="Accurate">
 
-		<img src="../assets/tab-creators-on.png" class="sideSpaceC leaderboardTab" id="creatorTabOn" style="display: none">
-		<img src="../assets/tab-creators-off.png" class="sideSpaceC leaderboardTab leaderboardClick" id="creatorTabOff">
+		<img src="../assets/tab-creators-on.png" class="sideSpaceC leaderboardTab" id="creatorTabOn" style="display: none" title="Creators">
+		<img src="../assets/tab-creators-off.png" class="sideSpaceC leaderboardTab leaderboardClick" id="creatorTabOff" title="Creators">
 	</div>
 
 	<div class="popup" id="infoDiv">
 		<div class="fancybox bounce center supercenter" style="width: 80vh">
 			<h2 class="smaller center" style="font-size: 5.5vh">Leaderboard Info</h2>
 			<p class="bigger center" id="infoText" style="line-height: 5vh; margin-top: 1.5vh"></p>
-			<img src="../assets/ok.png" width=20%; class="gdButton center" onclick="$('.popup').hide()">
+			<img src="../assets/ok.png" width=20%; class="gdButton center" onclick="$('.popup').hide()" title="OK">
 		</div>
 	</div>
 
@@ -90,10 +90,10 @@
 			<h2 class="smaller center" style="font-size: 5.5vh; margin-top: 1%">User Search</h2>
 			<p>Enter the <cy>username</cy> of a player to find their position in the <ca>global leaderboard</ca>.</p>
 			<input type="text" id="relativeName" placeholder="Username" style="height: 8vh; width: 90%; text-align: center; margin-top: 0.5%; margin-bottom: 5%"><br>
-			<img src="../assets/btn-cancel.png" class="postButton gdButton center" style="width: 32%; margin-right: 1%" onclick="$('#userSearch').hide()">
-			<img src="../assets/btn-submit.png" class="postButton gdButton center" style="width: 32%; margin-left: 1%" id="relativeSearch">
+			<img src="../assets/btn-cancel.png" class="postButton gdButton center" style="width: 32%; margin-right: 1%" onclick="$('#userSearch').hide()" title="Cancel">
+			<img src="../assets/btn-submit.png" class="postButton gdButton center" style="width: 32%; margin-left: 1%" id="relativeSearch" title="Submit">
 			<p id="relativeStatus" style="display: none"></p>
-			<img class="closeWindow gdButton" src="../assets/close.png" width="13%" style="position: absolute; top: -13.5%; left: -6vh" onclick="$('#userSearch').hide()">
+			<img class="closeWindow gdButton" src="../assets/close.png" width="13%" style="position: absolute; top: -13.5%; left: -6vh" onclick="$('#userSearch').hide()" title="Close">
 		</div>
 	</div>
 </div>
