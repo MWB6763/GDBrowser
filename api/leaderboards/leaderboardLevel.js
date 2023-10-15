@@ -1,4 +1,4 @@
-const colors = require('../../misc/icons/colors.json');
+const colors = require('../../iconkit/sacredtexts/colors.json');
 
 module.exports = async (app, req, res) => {
 
@@ -47,7 +47,7 @@ module.exports = async (app, req, res) => {
         app.userCache(req.id, x.accountID, x.playerID, x.username)
       }) 
 
-      return res.status(200).send(scores.slice(0, amount))
+      return res.send(scores.slice(0, amount))
       
       })
 }
